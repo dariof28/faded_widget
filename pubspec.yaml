@@ -1,6 +1,6 @@
 name: faded_widget
 description: A Flutter package that allows to fade a widget with a gradient of colors in any direction you prefer
-version: 0.1.0
+version: 1.0.0
 repository: https://github.com/dariof28/faded_widget
 
 environment:
