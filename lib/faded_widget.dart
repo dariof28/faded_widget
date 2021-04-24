@@ -1,0 +1,1 @@
+library faded_widget;
