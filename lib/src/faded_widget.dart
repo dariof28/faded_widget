@@ -15,7 +15,7 @@ class FadedWidget extends StatelessWidget {
   final Widget child;
 
   /// An optional margin to apply to widget.
-  final EdgeInsetsGeometry margin;
+  final EdgeInsetsGeometry? margin;
 
   /// The height of the fade.
   /// You can for example set half in order to fade just half of the child.
@@ -32,16 +32,14 @@ class FadedWidget extends StatelessWidget {
   final GradientDirection direction;
 
   FadedWidget({
-    @required this.child,
+    required this.child,
     this.margin,
-    @required this.height,
-    @required this.width,
-    @required this.fade,
-    GradientDirection direction,
-  })  : assert(child != null),
-        assert(height != null && height > 0),
-        assert(width != null && width > 0),
-        assert(fade != null),
+    required this.height,
+    required this.width,
+    required this.fade,
+    GradientDirection? direction,
+  })  : assert(height > 0),
+        assert(width > 0),
         direction = direction ?? GradientDirection.ttb;
 
   @override

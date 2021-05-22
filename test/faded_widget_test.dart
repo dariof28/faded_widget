@@ -88,8 +88,8 @@ void main() {
 
         final expectedGradient = LinearGradient(
           colors: fade,
-          begin: expected['begin'],
-          end: expected['end'],
+          begin: expected['begin']!,
+          end: expected['end']!,
         );
 
         await tester.pumpWidget(
